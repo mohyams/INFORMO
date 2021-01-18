@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mohit.fb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Acm" />
+        <activity android:name=".club">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".acmlogin" />
+        <activity android:name=".acseslogin" />
+        <activity android:name=".artlogin" />
+        <activity android:name=".cesalogin" />
+        <activity android:name=".eesalogin" />
+        <activity android:name=".elesalogin" />
+        <activity android:name=".pacelogin" />
+        <activity android:name=".rotaractlogin" />
+        <activity android:name=".saitlogin" />
+        <activity android:name=".visionlogin" />
+        <activity android:name=".wluglogin" />
+        <activity android:name=".login" />
+        <activity android:name=".acmview" />
+        <activity android:name=".acmdisplay" />
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".acm_disp" />
+        <activity android:name=".acsesdisplay" />
+        <activity android:name=".artdisplay" />
+        <activity android:name=".cesadisplay" />
+        <activity android:name=".eesadisplay" />
+        <activity android:name=".elesadisplay" />
+        <activity android:name=".mesadisplay" />
+        <activity android:name=".pacedisplay" />
+        <activity android:name=".rotaractdisplay" />
+        <activity android:name=".saitdisplay" />
+        <activity android:name=".visiondisplay" />
+        <activity android:name=".wlugdisplay"></activity>
+    </application>
+
+</manifest>

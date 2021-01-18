@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohit.fb.MainActivity">
+
+
+    <EditText
+        android:id="@+id/etEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Event Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etContent"
+        android:layout_width="400dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etEvent"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:hint="Content"
+        android:textAlignment="center"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/etVenue"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="13dp"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/etTime"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/etTime"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="280sp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/pbProgress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <EditText
+        android:id="@+id/etVenue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etEvent"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Venue"
+        android:inputType="textPersonName"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnchoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pbProgress"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:text="Choose File" />
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/ivImage"
+        android:text="Upload" />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnchoose"
+        android:layout_alignStart="@+id/etTime"
+        android:layout_marginBottom="11dp" />
+</RelativeLayout>
